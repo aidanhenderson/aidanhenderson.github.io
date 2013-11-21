@@ -10,36 +10,42 @@
         <script src="js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js"></script>
         <script src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script></script>
         <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.10.3.custom/css/humanity/jquery-ui-1.10.3.custom.min.css"/> 
-        
+        <link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
         <script type="text/javascript">
-            $("#tabs").tabs();
+            $(function(){$("#tabs").tabs();});
         </script>
     </head>
     <body>
         <div style="width:750px; margin:0px auto;">
             <div style=" width:100%; position:relative; background-color:#fff; float:left;">
-                <img src="images/pizzmo_v1.png" style="height:80%; width:30%; background-color:#fff; border:none; float:left; position:relative;"/>
-                <h1 style="float:left;">Pizzmo Pizza</h1>
+                <div style="float:left; clear:none; width:50%;">
+                    <img src="images/pizzmo_v1.png" style="background-color:#fff; border:none; float:left; position:relative; clear:both;"/>
+                </div>
+                <div style="position:relative; width:50%; float:right;">
+                    <h1 style="float:left; clear:none; position:relative;">Pizzmo Pizza</h1>
+                    <h3 style="float:left; clear:none; position:relative;">brought to you by</h3>
+                    <h3 style="float:left; clear:none; position:relative;">Landon and Aidan</h3>
+                </div>
             </div>
-            <div id="tabs">
+            <div id="tabs" style="float:left;">
                 <ul>
                     <li><a href="#tabs-1">Home</a></li>
                     <li><a href="#tabs-2">Doodle</a></li>
                     <li><a href="#tabs-3">Games</a></li>
                 </ul>
                 <!--tab one-->
-                <div id="tabs-1"style="width:100%; float:left; background-color:#fff">
+                <div id="tabs-1"style=" float:left; background-color:#fff">
                     <table style="margin:0px auto; float:left; position:relative; border-collapse:collapse;">
                         <tr style="text-align:center; color:#EC1500;"><th colspan=2><h3>Who's Side Are You On???</h3></th></tr>
-                        <tr><th style="border:1px solid black;">Bam</th><th style="border:1px solid black;">Pizzmo Pizza</th></tr>
+                        <tr><th><strong>Bam</strong></th><th ><strong>Pizzmo Pizza</strong></th></tr>
                         <tr>
-                            <td style="border:1px solid black;">
+                            <td >
                                 <p>
                                     Bam is the super hero trying to beat Pizmo Pizza, 
                                     and he will succeed.
                                 </p>
                             </td>
-                            <td style="border:1px solid black;">
+                            <td >
                                 <p>
                                     Pizzmo Pizza is the villian who is trying to beat Bam, but he got punched in the face by a baby.
                                 </p>
@@ -53,7 +59,7 @@
             </div>
             
             <div style="float:left; clear:both; height:200px; width:100%; background-color:#fff;">
-                Footer Content
+                all rights reserved PizzmoPizza.com
             </div>
         </div>
 
